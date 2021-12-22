@@ -132,7 +132,7 @@ p {
 .carousel {
     margin: 2rem auto;
     padding: 2rem 0;
-    max-width: 800px;
+    max-width: 400px;
     text-align: center;
     overflow-x: hidden;
     background-color: var(--carousel-bg-color);
@@ -158,7 +158,7 @@ p {
     display: flex;
     list-style: none;
     transition: transform 500ms ease-in-out ;
-    animation: carousel-slide 12s ease-in-out 3s;
+    /* animation: carousel-slide 12s ease-in-out 3s; */
 }
 
 #slide-1:checked ~.slides{ transform: translateX(  0%); }
@@ -722,6 +722,10 @@ progress::-moz-progress-bar {
 
 /*  --  Versión Tablet  --  */
 @media screen and (min-width: 768px) {
+    .carousel {
+        max-width: 600px;
+    }
+
     .contact-cards {
         display: grid;
         grid-template-columns: repeat(2, 48%);
@@ -763,6 +767,10 @@ progress::-moz-progress-bar {
 
 /*  --  Versión Desktop --  */
 @media screen and (min-width: 1024px) {
+    .carousel {
+        max-width: 800px;
+    }
+    
     .about {
         display: grid;
         grid-template-columns: repeat(3, 30%);
