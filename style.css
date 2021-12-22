@@ -170,7 +170,7 @@ p {
 
 
 
-/*  ---   HERO IMAGE   ---   */
+/*  ---   CONTACT FORM   ---   */
 
 .contact-form {
     margin: 2rem auto;
@@ -285,6 +285,7 @@ p {
 
 
 
+
 /*  ---   MENU   ---   */
 .menu-btn {
     outline: thin solid var(--second-color);
@@ -325,10 +326,9 @@ p {
 }
 
 .menu a:hover {
-    color: var(--second-color);
+    color: var(--first-color);
     background-color: var(--second-color);
 }
-
 
 
 @media screen and (min-width: 1024px) {
@@ -346,7 +346,10 @@ p {
 
     .menu a { padding: 0 1rem; }
     .menu a:last-child { padding-right: 0; }
-    .menu a:hover { background-color: transparent; }
+    .menu a:hover { 
+        background-color: transparent; 
+        color: var(--second-color);
+    }
 }
 
 /*  ---   MODAL   ---   */
@@ -477,8 +480,7 @@ progress::-moz-progress-bar {
     padding: .5rem 1rem;
     width: 300px;
     text-align: center;
-    color: var(--title-color);
-
+    color: black;
 }
 
 .text-center { text-align: center; }
