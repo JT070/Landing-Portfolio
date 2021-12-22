@@ -155,6 +155,20 @@ p {
     /* animation: carousel-slide 12s ease-in-out 3s; */
 }
 
+.slide {
+    font-size: small;
+    min-width: 300px;
+    /* border: thick solid black; */
+}
+
+.enlace-certificado { 
+    margin: .75rem 0;
+}
+
+.enlace-certificado a {
+    color: var(--first-color); 
+}
+
 #slide-1:checked ~.slides{ transform: translateX(  0%); }
 #slide-2:checked ~.slides{ transform: translateX(-25%); }
 #slide-3:checked ~.slides{ transform: translateX(-50%); }
@@ -478,7 +492,8 @@ progress::-moz-progress-bar {
     border-bottom: thin solid var(--first-color);
     margin: 2rem auto; /* arriba-abajo / lados*/
     padding: .5rem 1rem;
-    width: 300px;
+    max-width: 400px;
+    min-width: 250px;
     text-align: center;
     color: black;
 }
@@ -674,6 +689,12 @@ progress::-moz-progress-bar {
         max-width: 600px;
     }
 
+    .slide {
+        font-size: medium;
+        /* border: thick solid black; */
+        min-width: 600px;
+    }
+
     .contact-cards {
         display: grid;
         grid-template-columns: repeat(2, 48%);
@@ -722,6 +743,12 @@ progress::-moz-progress-bar {
 @media screen and (min-width: 1024px) {
     .carousel {
         max-width: 800px;
+    }
+
+    .slide {
+        font-size: medium;
+        /* border: thick solid black; */
+        min-width: 800px;
     }
     
     .about {
