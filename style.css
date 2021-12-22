@@ -672,8 +672,8 @@ progress::-moz-progress-bar {
 
 .portfolio-modal {
     padding: 1rem;
-    max-width: 350px;
-    max-height: 600px;
+    max-width: 300px;
+    max-height: 400px;
     font-size: small;
     /* Para asegurar, hacemos redundancia */
       display: flex;
@@ -682,7 +682,7 @@ progress::-moz-progress-bar {
 }
 
 .portfolio-modal img {
-    padding: 0 2.5rem 0 2.5rem;
+    display: none;
 }
 
 .portfolio-modal h3 {
