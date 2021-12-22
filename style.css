@@ -44,7 +44,7 @@ html {
 
 body {
     margin: 0px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     color: var(--text-color);
 }
 
@@ -132,7 +132,7 @@ p {
 .carousel {
     margin: 2rem auto;
     padding: 2rem 0;
-    max-width: 400px;
+    max-width: 300px;
     text-align: center;
     overflow-x: hidden;
     background-color: var(--carousel-bg-color);
@@ -285,6 +285,7 @@ p {
 
 .hero-image-title {
     font-size: 7vw;
+    margin-bottom: 2rem;
     color: var(--hero-text-color);
 }
 
@@ -671,11 +672,17 @@ progress::-moz-progress-bar {
 
 .portfolio-modal {
     padding: 1rem;
-    max-width: 400px;
+    max-width: 350px;
+    max-height: 600px;
+    font-size: small;
     /* Para asegurar, hacemos redundancia */
       display: flex;
       flex-direction: column;
     background-color: var(--white-color);
+}
+
+.portfolio-modal img {
+    padding: 0 2.5rem 0 2.5rem;
 }
 
 .portfolio-modal h3 {
@@ -744,6 +751,12 @@ progress::-moz-progress-bar {
     .portfolio-modal {
         flex-direction: row;
         max-width: 800px;
+        font-size: medium;
+    }
+
+    .portfolio-modal img {
+        padding: 0;
+        margin: 0;
     }
 
     .portfolio-info {
@@ -801,6 +814,8 @@ progress::-moz-progress-bar {
     .portfolio > .container {
         grid-template-columns: repeat(3, 1fr);
     }
+
+   
 
     .portfolio .section-title {
         grid-column: span 3;
