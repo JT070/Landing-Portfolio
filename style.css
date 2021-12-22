@@ -3,13 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
 
 :root {
-    --first-color: #D90062;
-    --first-alpha-color: rgba(217, 0, 98, 0.75);
-    --second-color: #14192D;
-    --second-alpha-color: rgba(20, 25, 45, 0.75);
+    /* --first-color: #D90062; */
+    /* --first-alpha-color: rgba(217, 0, 98, 0.75); */
+    /* --second-color: #14192D;
+    --second-alpha-color: rgba(20, 25, 45, 0.75); */
     --third-color: #501464;
     --third-alpha-color: rgba(80, 20, 100, 0.75);
     
+    --first-color: #001130;
+    --first-alpha-color: #0a004bab;
+    --second-color: rgb(224, 218, 255);
+    --second-alpha-color: rgba(22, 51, 216, 0.247);
+    --white-alpha-color: #bcdbff6c;
+
+
+
     --white-color: #FFF;
     --gray-light-color: #F3F3F3;
     --gray-color: #CCC;
@@ -20,7 +28,7 @@
     --title-color: #333;
     --text-color: #222;
 
-    --white-alpha-color: rgba(255,255,255,0.3);
+    /* --white-alpha-color: rgba(255,255,255,0.3); */
     --black-alpha-color: rgba(0,0,0,0.3);
 
     --font: 'Montserrat', sans-serif;
@@ -28,6 +36,17 @@
     --max-width: 1200px;
     --header-height: 4rem;
 }
+
+
+/* 
+.color1 {color: #002c41;}  Menú y Textos
+.color2 {color: #004d67;}
+.color3 {color: #007a95;}
+.color4 {color: #00b6cb;}
+.color5 {color: #00ffff;}
+ */
+
+
 
 /*   --------------------   RESET   --------------------   */
 
@@ -90,31 +109,6 @@ img {
 p {
     line-height: 1.6;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -293,14 +287,14 @@ p {
 
 /*  ---   MENU   ---   */
 .menu-btn {
-    outline: thin solid var(--first-color);
+    outline: thin solid var(--second-color);
     border: 0;
     cursor: pointer;
-    background-color: var(--second-color);
+    background-color: var(--first-color);
 }
 
 .menu-btn svg {
-    fill: var(--first-color);
+    fill: var(--second-color);
 }
 
 .menu {
@@ -310,7 +304,7 @@ p {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: var(--second-color);
+    background-color: var(--first-color);
     opacity: 0;
     pointer-events: none;
     /* transition: opacity 333ms ease; */
@@ -327,12 +321,12 @@ p {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: var(--first-color);
+    color: var(--white-color);
 }
 
 .menu a:hover {
-    color: var(--white-color);
-    background-color: var(--first-color);
+    color: var(--second-color);
+    background-color: var(--second-color);
 }
 
 
@@ -428,28 +422,6 @@ progress::-moz-progress-bar {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*   --------------------   UTILITIES   --------------------   */
 
 .avatar {
@@ -485,15 +457,14 @@ progress::-moz-progress-bar {
 }
 
 .gray-scale {
-    filter: grayscale(1);
-    transition: 1000ms;
+    transition: 700ms;
     cursor: pointer;
 }
 .gray-scale:hover {
-    filter: none;
-    transition: 1000ms;
-    /* transform: scale(1.005); */
+    filter: contrast(110%) brightness(110%);
+    transform: scale(1.005);
     box-shadow: 1px 1px 5px var(--gray-dark-color);
+    transition: 700ms;
 }
 
 .none { display: none; }
@@ -504,7 +475,7 @@ progress::-moz-progress-bar {
     border-bottom: thin solid var(--first-color);
     margin: 2rem auto; /* arriba-abajo / lados*/
     padding: .5rem 1rem;
-    width: 250px;
+    width: 300px;
     text-align: center;
     color: var(--title-color);
 
@@ -533,38 +504,6 @@ progress::-moz-progress-bar {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*   --------------------   SITE STYLES   --------------------   */
 
 .about > article {
@@ -585,7 +524,7 @@ progress::-moz-progress-bar {
 .contact-card > svg {
     width: 2rem;
     height: 2rem;
-    fill: var(--first-alpha-color);
+    fill: var(--first-color);
 }
 
 .contact-card  > small {
@@ -596,7 +535,7 @@ progress::-moz-progress-bar {
     margin-bottom: var(--header-height);
     padding: 1rem;
     text-align: center;
-    background-color: var(--third-color);
+    background-color: var(--first-color);
     color: var(--white-color);
 }
 
@@ -607,7 +546,7 @@ progress::-moz-progress-bar {
     z-index: 999;
     width: 100%;
     height: var(--header-height);
-    background-color: var(--second-color);
+    background-color: var(--first-color);
 }
 
 .header > .container {
@@ -618,13 +557,13 @@ progress::-moz-progress-bar {
 } 
 
 .logo {
-    background-color: var(--second-color);
+    background-color: var(--first-color);
     /* Para que no se separe mi nombre */
     min-width: max-content;
 } 
 
 .logo a {
-    color: var(--first-color);
+    color: var(--white-color);
     font-weight: bold;
     font-size: 2rem;
     text-decoration: none;
@@ -686,7 +625,7 @@ progress::-moz-progress-bar {
 }
 
 .portfolio-modal h3 {
-    border-bottom: medium solid var(--first-alpha-color);
+    border-bottom: medium solid var(--first-color);
     margin: 1rem auto;
     padding: .5rem 0;
     color: var(--title-color);
@@ -755,8 +694,7 @@ progress::-moz-progress-bar {
     }
 
     .portfolio-modal img {
-        padding: 0;
-        margin: 0;
+        display: inline-block;
     }
 
     .portfolio-info {
