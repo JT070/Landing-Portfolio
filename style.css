@@ -718,6 +718,8 @@ progress::-moz-progress-bar {
 
     .portfolio-modal img {
         display: inline-block;
+        max-width: 400px;
+        max-height: 400px;
     }
 
     .portfolio-info {
