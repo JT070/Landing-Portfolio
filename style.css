@@ -432,7 +432,7 @@ progress::-moz-progress-bar {
 .progress > p {
     margin: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font: 0.85rem;
 }
 
