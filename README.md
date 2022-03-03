@@ -1,5 +1,5 @@
-#LANDING PAGE TIPO: PORTAFOLIO
-####By: JAVIER TREJO 😎
+# LANDING PAGE TIPO: PORTAFOLIO
+#### By: JAVIER TREJO 😎
 
 Esta Landing Page aun se encuentra en desarrollo y en espera 
 de introducir más elementos, así como los textos faltantes de
